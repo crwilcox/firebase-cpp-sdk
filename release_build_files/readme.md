@@ -576,6 +576,7 @@ code.
         the `INTERNAL_EXPERIMENTAL` macro.
     -   General: Compiler setting of "no exceptions" on app is PRIVATE now 
         and will not affect other targets in CMake builds.
+    -   Firestore: added more validation of invalid input.
 
 ### 8.2.0
 -   Changes
