@@ -486,7 +486,8 @@ if (IOS)
     ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/firestore_errors.h
     ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/firestore_version.h
     ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/geo_point.h
-    ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h)
+    ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/core/include/firebase/firestore/timestamp.h
+    ${FIREBASE_POD_DIR}/Pods/FirebaseFirestore/Firestore/Protos/nanopb/google/api/annotations.nanopb.h)
   set(functions_HDRS
     ${FIREBASE_SOURCE_DIR}/functions/src/include/firebase/functions.h
     ${FIREBASE_SOURCE_DIR}/functions/src/include/firebase/functions/callable_reference.h
