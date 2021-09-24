@@ -169,6 +169,13 @@ jobs:
         run: |
           python scripts/gha/build_desktop.py --build_tests --arch "${{ matrix.architecture }}" --config "${{ matrix.build_type }}" --msvc_runtime_library "${{ matrix.msvc_runtime }}" --gha_build
 
+      - name: Print info
+        shell: bash
+        run: |
+          cat build/external/output_cmake_config.txt
+          echo "=============="
+          cat build/external/output_cmake_build.txt
+
       - name: Stats for ccache (mac and linux)
         if: startsWith(matrix.os, 'ubuntu') || startsWith(matrix.os, 'macos')
         run: ccache -s
