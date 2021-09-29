@@ -25,7 +25,8 @@ set(patch_file
 ExternalProject_Add(
   uWebSockets
 
-  DOWNLOAD_COMMAND 
+  DOWNLOAD_COMMAND
+    COMMAND echo "PATH: ${PATH}" 
     COMMAND git init uWebSockets
     COMMAND cd uWebSockets && git fetch --depth=1 https://github.com/uNetworking/uWebSockets.git ${uwebsockets_commit_tag} && git reset --hard FETCH_HEAD
 
